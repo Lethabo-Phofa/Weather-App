@@ -1,5 +1,6 @@
-//-- my OpenWeather API key -- 
-const apiKey = '7bbcb7dee64e780bde196bd58c399191';
+//-- encoding my API key 
+const encodedKey = "N2JiY2I3ZGVlNjRlNzgwYmRlMTk2YmQ1OGMzOTkxOTE=";
+const apiKey = atob(encodedKey);
 
 // pressing "Enter" will also serve as get weather button
 document.getElementById('cityInput').addEventListener('keypress', function(event) {
